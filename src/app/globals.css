@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   :root {
 
     --background: 0 0% 100%;
@@ -108,8 +112,6 @@
     --chart-5: 340 75% 55%
   }
 }
-
-
 
 @layer base {
   * {

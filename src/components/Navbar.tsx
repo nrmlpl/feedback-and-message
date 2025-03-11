@@ -14,13 +14,13 @@ const Navbar = () => {
 
 
     return (
-        <nav className='p4 md:p-6 shadow-md'>
-            <div className='container max-auto flex flex-col md:flex-row justify-between items-center'>
-                <a className='text-xl font-bold mb-4 md:mb-0' href="#">Mystry Text</a>
+        <nav className='p-4 md:p-6 shadow-md'>
+            <div className='container max-auto flex flex-row justify-between items-center'>
+                <a className='text-xl font-bold' href="#">MystryText</a>
                 {
                     session ? (
                         <>
-                            <span className='mr-4'>Welcom, {user?.username || user?.email}</span>
+                            <span className='mr-4 font-bold text-lg hover:scale-105 transition-all duration-300'>{user?.username || user?.email}</span>
                             <Button className='w-full md:w-auto' onClick={() => signOut()}>Logout</Button>
                         </>
                     ) : (
